@@ -24,7 +24,7 @@ vagrant up
 ```bash
 vagrant box add ./package.box --name=AarchExp --force
 ```
-- now we will AarchExp directly correspond to our local box
+- now AarchExp directly correspond to our local box in the environment (force flag means replace any existing association with that box name)
 - we now cd into the directory with the vagrantfile and make sure name is consistent
 - We will use our own private key in the folder and will not insert replacements to make it idempotent i.e. you should be able to get a completely fresh install in the same computer or even within this folder
 
