@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
     # Change name to avoid conflict
-    vb.name = "myAarchExperiment01"  
+    vb.name = "myAarchExperiment03"  
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.memory = 16384
     config.ssh.private_key_path = "private_key"
