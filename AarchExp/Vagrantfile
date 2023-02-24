@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "altafsaljooq/EndeavousOS"
-  config.vm.box_version = "0.2"
+  config.vm.box_version = "0.3"
   config.ssh.insert_key = false
 
    config.vm.provider "virtualbox" do |vb|
@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
     # Change name to avoid conflict
     vb.name = "myAarchExperiment01"  
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
+    vb.memory = 16384
     config.ssh.private_key_path = "private_key"
   end
   
